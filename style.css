@@ -21,7 +21,8 @@ body {
     text-align: center;
     border-radius: 0 0 50px 50px;
     background: rgb(34,45,195);
-    background: linear-gradient(0deg, rgba(34,45,195,1) 0%, rgba(121,45,253,1) 100%);
+    background: linear-gradient(0deg, rgba(34,45,195,1) 0%,
+    rgba(121,45,253,1) 100%);
 }
 
 h1 {
@@ -39,7 +40,8 @@ h1 {
     align-items: center;
     justify-content: center;
     background: rgb(34,45,195);
-    background: linear-gradient(0deg, rgba(34,45,195,1) 0%, rgba(121,45,253,1) 100%);
+    background: linear-gradient(0deg, rgba(34,45,195,1) 0%,
+    rgba(121,45,253,1) 100%);
     border-radius: 100px;
 }
 
@@ -70,6 +72,7 @@ h2 {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    padding: 10px 10px 10px;
 }
 
 h3 {
@@ -92,7 +95,7 @@ h3 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
 .border {
@@ -180,4 +183,25 @@ button {
 
 button:hover {
     background-color: blue;
+}
+
+@media (min-width: 750px) {
+    body {
+        height: 100vh;
+    }
+
+    .divisora {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        box-shadow: 5px 5px 5px rgba(80, 78, 78, 0.3);
+        border-radius: 50px;
+    }
+
+    .general {
+        border-radius: 50px;
+        height: 500px;
+        width: 350px;
+    }
 }
